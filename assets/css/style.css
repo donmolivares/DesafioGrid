@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+
+
+header{
+    grid-area: header;
+    background-color: rgb(32, 6, 116);
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.encabeza_y_foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+menu{
+    grid-area: menu;
+    background-color: rgb(232, 224, 224);
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(232, 224, 224);
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    height: 100%;
+    
+    background-color: white;
+}
+
+.muestra_productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  
+}
+
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    gap: 0px;
+   
+    text-align: center;
+    }
+
+
+.btn_comprar{
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 100;
+    color :white;
+    background-color: rgb(32, 6, 116);
+    width: 90%;
+    margin: 20px;
+    text-align: center;
+                }
+
+                
+.letras_footer{
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+                
+
+.Letra_numeros{
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 100;
+                }
+
+.letras_menu{
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+.letras_menu_titulo{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+                
+
+.grid-item img{
+    width: 100%;
+    height: 70%;
+    padding-bottom: 10px;
+    
+    }
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+    grid-template-columns: 20% 79%;
+    grid-template-rows: 10% 80%;
+    
+    min-height: 100vh;
+  
+}
